@@ -26,7 +26,11 @@ public class Launcher
 {
   public static void main( String[] args )
   {
-    int goalCountryCount = 20;
+    if (args.length != 1) {
+        System.err.println("Please (only) supply a world count");
+        System.exit(1);
+    }
+    int goalCountryCount = Integer.parseInt(args[0]);
     World world = RandomWorldGenerator.generate( goalCountryCount );
     world.printSetup();
   }
