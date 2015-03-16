@@ -208,9 +208,9 @@ public class RandomWorldGenerator
     chooseWastelandCountries();
     chooseStartingCountries();
 
-    printCountryLayout();
-    printContinentLayout();
-    printContinentSummary();
+    //printCountryLayout();
+    //printContinentLayout();
+    //printContinentSummary();
 
     return world;
   }

@@ -67,14 +67,12 @@ public class World
   public void printSetup()
   {
     System.out.println( "settings max_rounds " + maxRounds );
-    System.out.println( "" );
 
     System.out.print( "setup_map super_regions" );
     for ( Continent continent : continents )
     {
       System.out.print( " " + continent.id + " " + continent.bonus );
     }
-    System.out.println( "" );
     System.out.println( "" );
 
     System.out.print( "setup_map regions" );
@@ -85,7 +83,6 @@ public class World
         System.out.print( " " + country.id + " " + continent.id );
       }
     }
-    System.out.println( "" );
     System.out.println( "" );
 
     System.out.print( "setup_map neighbors" );
@@ -105,7 +102,6 @@ public class World
       }
     }
     System.out.println( "" );
-    System.out.println( "" );
 
     System.out.print( "setup_map wastelands" );
     for ( Country wastelandCountry : wastelandCountries )
@@ -113,14 +109,12 @@ public class World
       System.out.print( " " + wastelandCountry.id );
     }
     System.out.println( "" );
-    System.out.println( "" );
 
     System.out.print( "settings starting_regions" );
     for ( Country startingCountry : startingCountries )
     {
       System.out.print( " " + startingCountry.id );
     }
-    System.out.println( "" );
     System.out.println( "" );
   }
 }

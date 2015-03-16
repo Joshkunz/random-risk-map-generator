@@ -26,7 +26,7 @@ public class Launcher
 {
   public static void main( String[] args )
   {
-    int goalCountryCount = 55;
+    int goalCountryCount = 20;
     World world = RandomWorldGenerator.generate( goalCountryCount );
     world.printSetup();
   }
